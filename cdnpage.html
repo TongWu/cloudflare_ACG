@@ -1,6 +1,6 @@
 <html lang="en">
 <head>
-    <title>cdn.cattery.work | INTEL-2333</title>
+    <title>你是机器人咩？ | wu.engineer</title>
 
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -24,16 +24,16 @@
     <div class="md:flex min-h-screen main-body">
         <div class="w-full md:w-1/2 flex items-center justify-center left-sec">
             <div class="max-w-sm m-8 content-body">
-                <div class="text-5xl md:text-15xl font-black">欢迎来访吖(づ￣ 3￣)づ</div>
+                <div class="text-5xl md:text-15xl font-black">等一下下呀</div>
 
                 <p class="text-grey-darker text-2xl md:text-3xl mb-7 leading-normal">
-                </p><p class="sub-header"><h1 class="oops">欢迎来到cattery.work的cdn信息显示页面吖ˋ( ° ▽、° ) </h1></p>
+                </p><p class="sub-header"><h1 class="oops">我们会在5s内检查你的浏览器，确保你不是恶意攻击 </h1></p>
                 <br><br>
                 当前CDN节点: <span id="cdn">我也不知道</span>
 
                 <div class="sub-footer">
                     <div class="w-full h-2 bg-grey-light my-3 md:my-6"></div>
-                    <p id="footer_data">正在获取,可能要一小会喔！</p>
+                    <p id="footer_data">正在获取,可能要一小会</p>
                 </div>
 
             </div>
@@ -67,7 +67,7 @@
                     $.getJSON("https://api.ip.sb/jsonip?callback=?",
                         ((json) => {
                             console.log(json)
-                            $("#footer_data").html(data.status + " • 回源节点：" + data.cdnip + " • 您的ip：" + json.ip+" • Performance & Security by Cloudflare")
+                            $("#footer_data").html(data.status + " • 回源节点：" + data.cdnip + " • 你的ip：" + json.ip+" • Performance & Security by Cloudflare")
                         })
                     );
                 }
